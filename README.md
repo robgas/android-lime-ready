@@ -1,6 +1,8 @@
-Intro
+Android LiME Ready
 ==================
-Android Lime Ready is an Android emulator image modified to run the Linux Memory Extractor (LiME) announced at ShmooCon 2012 by Joe Sylve, Digital Forensics Solutions (the presentation is available [here](http://digitalforensicssolutions.com/Android_Mind_Reading.pdf) ).
+Android Lime Ready is an Android emulator image modified to run the Linux Memory Extractor (LiME) *which allows the acquisition of volatile memory from Linux and Linux-based devices, such as those powered by Android*.
+
+LiME has been announced at ShmooCon 2012 by Joe Sylve, Digital Forensics Solutions (the presentation is available [here](http://digitalforensicssolutions.com/Android_Mind_Reading.pdf) ).
 
 LiME source code and documentation is freely available for download from the Google Code page: http://code.google.com/p/lime-forensics/ .
 
