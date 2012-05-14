@@ -6,11 +6,11 @@ LiME source code and documentation is freely available for download from the Goo
 
 Emulator Image
 ==================
-The image is based on the AOSP android-2.3.7\_r1 and the standard kernel 2.3.29 (goldfish) modified to load Linux Kernel Modules.
+The image is based on the AOSP android-2.3.7\_r1 (with busybox) and the standard kernel 2.3.29 (goldfish) modified to load Linux Kernel Modules.
 
 The version of LiME is the last version available.
 
-The emulator image is composed by:
+The emulator image is composed of:
 * zImage ( kernel recompiled with LKM support )
 * ramdisk.img
 * userdata.img
@@ -28,5 +28,22 @@ From a Terminal, run the emulator with ./start-emulator.sh (Only for the first t
 Once Android boot is complete, open a shell directly from the terminal used to start the emulator (press any key to start) or with 
 ```adb shell```
 
+LiME supports acquiring memory either to the file system of the device or over the network:
 
+Acquisition of Memory to Disk (SD-CARD)
+------------------------------
 
+To start the acquisition:
+
+```android-linux-ready.sh path=/sdcard```
+
+Once the acquisition is completed, a file with extension .pdump will be stored in /sdcard:
+```
+/mnt/sdcard $ ls
+LOST.DIR
+1337032096_0_fffffff.pdump
+```
+
+and the file can be transfered with:
+```adb pull /sdcard/1337032096_0_fffffff.pdump```
+ 
