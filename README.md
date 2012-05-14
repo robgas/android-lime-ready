@@ -26,7 +26,7 @@ First, check if the EMULATOR variable in start-emulator.sh is correct. (emulator
 From a Terminal, run the emulator with ./start-emulator.sh (Only for the first time, if the sdcard image is not available, a new one will be created)
 
 Once Android boot is complete, open a shell directly from the terminal used to start the emulator (press any key to start) or with 
-'''adb shell '''
+```adb shell```
 
 
 
