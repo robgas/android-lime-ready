@@ -1,6 +1,6 @@
 Intro
 ==================
-Android Lime Ready is an Android emulator image modified to run the Linux Memory Extractor (LiME) announced at ShmooCon 2012 by Joe Sylve, Digital Forensics Solutions (the presentation is available [here](http://digitalforensicssolutions.com/Android_Mind_Reading.pdf).
+Android Lime Ready is an Android emulator image modified to run the Linux Memory Extractor (LiME) announced at ShmooCon 2012 by Joe Sylve, Digital Forensics Solutions (the presentation is available [here](http://digitalforensicssolutions.com/Android_Mind_Reading.pdf) ).
 
 LiME source code and documentation is freely available for download from the Google Code page: http://code.google.com/p/lime-forensics/ .
 
@@ -25,9 +25,8 @@ First, check if the EMULATOR variable in start-emulator.sh is correct. (emulator
 
 From a Terminal, run the emulator with ./start-emulator.sh (Only for the first time, if the sdcard image is not available, a new one will be created)
 
-Once Android boot is complete, open a shell directly from the terminal used to start the emulator (press any key to start) or with
-    adb shell
-
+Once Android boot is complete, open a shell directly from the terminal used to start the emulator (press any key to start) or with 
+'''adb shell '''
 
 
 
