@@ -30,7 +30,7 @@ Once Android boot is complete, open a shell directly from the terminal used to s
 
 LiME supports acquiring memory either to the file system of the device or over the network:
 
-Acquisition of Memory to Disk (SD-CARD)
+Acquisition of Memory to SD Card
 ------------------------------
 
 To start the acquisition:
@@ -45,5 +45,24 @@ LOST.DIR
 ```
 
 and the file can be transfered with:
+
 ```adb pull /sdcard/1337032096_0_fffffff.pdump```
+
+Acquisition of Memory over TCP
+------------------------------
+LiME also allows to dump memory over TCP, for example over port 4444, with:
+
+```android-linux-ready.sh path=tcp:4444```
+
+inside the emulator and with:
+
+```
+adb forward tcp:4444 tcp:4444
+nc localhost 4444 > ram.dump
+```
+
+on the real machine.
+
+
+
  
